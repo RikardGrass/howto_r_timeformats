@@ -1,3 +1,11 @@
+###########################
+#
+# A Quick start for the most common functions
+#   in timesreries date/time formats 
+#   in agricultural data sets
+#
+############################
+
 Sys.setenv(TZ = "Europe/Berlin")
 #Sys.setlocale("LC_ALL", "de_DE") # Unix
 Sys.setlocale("LC_ALL", "German") # Windows
@@ -17,3 +25,16 @@ attr(testdate_gmt, "tzone") <- Sys.timezone(location = TRUE) # change date forma
 #attr(result$date, "tzone") <- Sys.timezone(location = TRUE) # change date format to local time 
 attr(testdate_gmt_berlin, "tzone") <- Sys.timezone(location = TRUE) # change date format to local time 
 #attr(result$date, "tzone") <- Sys.timezone(location = TRUE) # change date format to local time 
+
+
+#Todo:
+#explain:
+# GMT vs. UTC
+# CET vs. CEST
+# GMT
+# - has fixed difference to UTC
+# - convert to UTC by GNT - 1 
+
+
+# Sources:
+# R Time Date Classes
